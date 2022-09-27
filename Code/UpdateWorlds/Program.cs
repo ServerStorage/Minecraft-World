@@ -24,7 +24,7 @@ foreach (var world in worlds)
 {
     var index = world.LastIndexOf('\\');
     var name = world[++index..];
-    var destinationPath = $@"{testOutputDirectory}\{name}";
+    var destinationPath = $@"{worldsDestinationDirectory}\{name}";
     CopyFilesRecursively(world, destinationPath);
 }
 
